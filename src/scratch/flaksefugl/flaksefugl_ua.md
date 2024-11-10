@@ -104,58 +104,59 @@ __Натисніть на зелений прапорець.__
   на сторінку, можна використовувати `повторити до махати = 0`{.blockcontrol}:
 
   ```blocks
-  når grønt flagg klikkes
-  sett [flaks v] til [0]
-  bytt drakt til [Vinger opp v]
-  gjenta for alltid
-      gjenta til <(flaks) = [0]>
-          endre [flaks v] med (-1)
-          bytt drakt til [Vinger ned v]
-          gjenta (10) ganger
-              endre y med (6)
-          slutt
-          bytt drakt til [Vinger opp v]
-          gjenta (10) ganger
-              endre y med (6)
-          slutt
-      slutt
-  slutt
+  коли клацнути зелений прапорець
+  встановити [махати v] до [0]
+  переодягнутися [крила вгору v]
+  повторювати вічно
+      повторити до <(махати) = [0]>
+          змінити [махати v] з (-1)
+          переодягнутися на [крила вниз v]
+          повторити (10) разів
+              змінитиy c (6)
+          кінець
+          переодягнутися на [крила вгору v]
+          повторити на (10)
+              зміна y 3 (6)
+          кінець
+      кінець
+  кінець
   ```
 
-- [ ] Til slutt, legg følgende skript på `når mellomrom
-  trykkes`{.blockevents}-klossen som ble til overs tidligere:
+- [ ] Наступний крок - додайте наступний сценарій до блоку `оли пробіл натиснутий`{.blockevents} який
+залишився раніше:
 
   ```blocks
-  når [mellomrom v] trykkes
-  endre [flaks v] med (1)
+  коли [простірv] натиснуто
+  змінити [махати v] з (1)
   ```
 
-- [ ] Du skal nå ha tre forskjellige skript på Flakse.
+- [ ] Тепер ви маєте три різні сценарії для Пір’їнки.
 
-## Test prosjektet {.flag}
+## Перевірка {.flag}
 
-__Klikk det grønne flagget.__
+__Натисніть на зелений прапорець.__
 
-- [ ] Flakser Flakse en gang for hver gang du trykker mellomromtasten?
+- [ ] Пір’їнка змахує крилами один раз під час кожного натискання пробілу?
 
 
-# Steg 4: Legg til rørene {.activity}
+# Крок 4:  Додайте перешкоди {.activity}
 
-*Vi vil legge til noen hindringer som Flakse kan fly igjennom.*
+*Ми додамо деякі перешкоди, через які Пір’їнка може пролетіти.*
 
-## Sjekkliste {.check}
+## Контрольний список {.check}
 
 - [ ] Legg til en ny figur ved å klikke på *Tegn*-knappen.
+- [ ] Додайте нову фігуру, натиснувши кнопку *маліовати*.
 
-  ![Tegn ny figur](tegn-ny.png)
+  ![Намалюйте нову форму](tegn-ny.png)
 
-- [ ] Hvis det står `Gå til vektorgrafikk` på en knapp til venstre under tegneområdet, klikk på knappen.
-
+- [ ] Якщо на кнопці ліворуч під областю малювання написано `Перейти до векторної графіки`, натисніть цю кнопку.
 - [ ] Klikk på `Zoom =` så du kan se hele tegneområdet.
+- [ ] Натисніть `Режим приближення =` щоб ви могли побачити всю область малювання.
 
-  ![Zoom =](zoom_eq.png)
+  ![Режим приближення =](zoom_eq.png)
 
-- [ ] Klikk på `Rektangel`-ikonet, til venstre ved tegneområdet ![Rektangel](rektangel.png). Velg farge på rektangelet som skal tegnes ved å klikke på `Fyll`. Velg en fin farge. Vi ønsker å gjøre omrisset av firkanten gjennomsiktig. Dette gjør vi ved å klikke på `Kant`, og klikke på ikonet helt nederst i farge-dialogen, med en rød skråstrek.
+- [ ] Клацніть піктограму `Прямокутникl`, ліворуч від області малювання ![Rektangel](rektangel.png). Velg farge på rektangelet som skal tegnes ved å klikke på `Fyll`. Velg en fin farge. Vi ønsker å gjøre omrisset av firkanten gjennomsiktig. Dette gjør vi ved å klikke på `Kant`, og klikke på ikonet helt nederst i farge-dialogen, med en rød skråstrek.
 
   ![fyll kant](fyll_kant.png)
 
